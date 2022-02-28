@@ -18,13 +18,13 @@ $BigShadow: 0px 10px 30px #00000030;
 }
 
 * {
-    // font-family: 'Poppins', sans-serif;
-    font-family: 'Almarai';
+    font-family: 'Poppins', sans-serif;
+    // font-family: 'Almarai';
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: none;
-    direction: rtl;
+    // direction: rtl;
 }
 
 ::-webkit-scrollbar {
@@ -136,14 +136,14 @@ content {
     span {
         position: absolute;
         top: 50%;
-        right: 10%;
+        left: 10%;
         display: inline-block;
         width: 0;
         height: 0;
         background-color: $secondColor;
         transition: width 0.5s ease-in-out,
             height 0.5s ease-in-out;
-        transform: translate(50%, -50%);
+        transform: translate(-50%, -50%);
         z-index: -1;
         opacity: 1;
     }
@@ -250,7 +250,7 @@ content {
             //     background-color: $secondColor;
             //     position: absolute;
             //     bottom: 0;
-            //     right: 0;
+            //     left: 0;
             //     transition: $transition;
             //     border-radius: 10px;
             // }
@@ -288,8 +288,8 @@ content {
             background-color: $mainColor;
             border: 1px solid $secondColor;
             padding: 5px;
-            right: unset;
-            left: 0;
+            left: unset;
+            right: 0;
             margin-top: 10px;
 
             a {
@@ -392,20 +392,20 @@ content {
 
 .swiper-button-prev {
     &::after {
-        content: "\f054" !important;
+        content: "\f053" !important;
     }
 }
 
 .swiper-button-next {
     &::after {
-        content: "\f053" !important;
+        content: "\f054" !important;
     }
 }
 
 .swiper-pagination {
     width: auto !important;
-    right: 50% !important;
-    transform: translateX(50%);
+    left: 50% !important;
+    transform: translateX(-50%);
     background-color: #13223500;
     border-radius: 4px;
     // backdrop-filter: blur(4px);
@@ -460,7 +460,7 @@ content {
                 background-color: #00000063;
                 position: absolute;
                 bottom: 0;
-                right: 0;
+                left: 0;
                 transition: $transition;
             }
 
@@ -478,11 +478,11 @@ content {
                 // border-radius: 10px;
                 // background: #0000002f;
                 // backdrop-filter: blur(2px);
-                // margin-right: 100px;
+                // margin-left: 100px;
                 text-align: center;
 
                 @media (max-width: 768px) {
-                    margin-right: 0px;
+                    margin-left: 0px;
                 }
 
                 h2 {
@@ -557,7 +557,7 @@ content {
         height: 2px;
         background-color: $secondColor;
         position: absolute;
-        right: 0;
+        left: 0;
         bottom: 50%;
         transform: translateY(50%);
     }
@@ -569,7 +569,7 @@ content {
         border-radius: 100px;
         background-color: $secondColor;
         position: absolute;
-        left: 5%;
+        right: 5%;
         bottom: 50%;
         transform: translateY(50%);
     }
@@ -626,7 +626,7 @@ content {
         height: 2px;
         background-color: $secondColor;
         position: absolute;
-        right: 0;
+        left: 0;
         bottom: 50%;
         transform: translateY(50%);
         z-index: 1;
@@ -672,7 +672,7 @@ content {
             border-radius: 100px;
             background-color: $secondColor;
             position: absolute;
-            left: 0;
+            right: 0;
             bottom: 0;
         }
 
@@ -683,7 +683,7 @@ content {
             border-radius: 100px;
             background-color: $secondColor;
             position: absolute;
-            left: 0;
+            right: 0;
             bottom: 0;
         }
     }
@@ -986,7 +986,7 @@ content {
         &::before {
             content: '';
             position: absolute;
-            right: 0;
+            left: 0;
             top: 50%;
             width: 100%;
             height: 4px;
@@ -1025,7 +1025,7 @@ content {
         .blog-image {
             overflow: hidden;
             position: relative;
-            border-radius: 0 20px  20px 0;
+            border-radius: 20px 0 0 20px;
 
             @media (max-width:768px) {
                 border-radius: 20px 20px 0 0;
@@ -1040,11 +1040,11 @@ content {
 
         .blog-content {
             padding: 25px;
-            padding-left: 5px;
+            padding-right: 5px;
             position: relative;
 
             @media (max-width:768px) {
-                padding-left: 25px;
+                padding-right: 25px;
             }
 
             &::before {
@@ -1052,7 +1052,7 @@ content {
                 width: 65px;
                 height: 100%;
                 position: absolute;
-                right: -30px;
+                left: -30px;
                 top: 0;
                 transform: skewX(10deg);
                 background-color: $white-color;
@@ -1086,14 +1086,14 @@ content {
 
         .date {
             position: absolute;
-            right: 0px;
+            left: 0px;
             width: auto;
             z-index: 5;
             top: 0;
             padding: 10px 20px;
             background-color: $mainColor;
             color: $secondColor;
-            border-radius: 0 20px 0 20px ;
+            border-radius: 20px 0 20px 0;
             box-shadow: -3px 3px 3px #00000070;
         }
     }
@@ -1114,7 +1114,7 @@ content {
 
         i {
             color: $secondColor;
-            margin-right: 15px;
+            margin-left: 15px;
         }
     }
 
@@ -1137,13 +1137,13 @@ content {
 
             &:before {
                 top: 100%;
-                left: 20%;
+                right: 20%;
                 content: " ";
                 transform: scaleX(-1);
                 height: 0;
                 width: 0;
                 position: absolute;
-                margin-right: -32px;
+                margin-left: -32px;
                 bottom: -20px;
                 border-color: #eeeeee #88b7d500 #c2e1f500;
                 border-style: solid;
@@ -1189,12 +1189,12 @@ content {
 
 .mapEarth {
     .section-title {
-        text-align: left;
+        text-align: right;
         margin: 0 auto 25px 0;
         max-width: 100%;
 
         h2 {
-            padding-left: 0;
+            padding-right: 0;
         }
     }
 
@@ -1207,7 +1207,7 @@ content {
         .earth {
             position: absolute;
             top: 50%;
-            left: 50%;
+            right: 50%;
             width: 80%;
             height: 80%;
             margin: -40%;
@@ -1222,7 +1222,7 @@ content {
         .orbic {
             position: absolute;
             top: 0;
-            left: 0;
+            right: 0;
             width: 100%;
             height: 100%
         }
@@ -1366,7 +1366,7 @@ content {
 
             .earth {
                 top: 0;
-                left: 0;
+                right: 0;
                 width: 100%;
                 height: 100%;
                 margin: 0;
@@ -1530,11 +1530,11 @@ content {
 
     @keyframes sky {
         0% {
-            background-position: left bottom;
+            background-position: right bottom;
         }
 
         100% {
-            background-position: right top;
+            background-position: left top;
         }
     }
 
@@ -1548,7 +1548,7 @@ content {
         background-color: $mainColor;
         color: $white-color;
         border-radius: 100%;
-        margin-left: 30px;
+        margin-right: 30px;
         transition: $transition;
         font-size: 20px;
         border: none;
@@ -1556,10 +1556,6 @@ content {
         &:hover {
             background-color: $black-color;
             color: $gold;
-        }
-
-        .fa-angle-left:before {
-            content: "\f105";
         }
     }
 
@@ -1582,7 +1578,7 @@ content {
                 font-weight: bold;
                 text-transform: uppercase;
                 font-size: 18px;
-                padding-left: 10px;
+                padding-right: 10px;
 
                 &:hover {
                     color: $secondColor;
@@ -1600,7 +1596,7 @@ content {
                 font-size: 20px;
                 font-weight: bold;
                 position: absolute;
-                left: -3px;
+                right: -3px;
                 top: 50%;
                 transform: translateY(-50%);
             }
@@ -1615,7 +1611,7 @@ content {
         padding: 175px 15px 45px;
 
         .Back {
-            margin-left: 20px;
+            margin-right: 20px;
         }
 
         ul {
@@ -1631,7 +1627,7 @@ content {
         width: 100%;
         position: absolute;
         bottom: 0px;
-        right: 0;
+        left: 0;
 
         svg {
             width: 100%;
@@ -1679,7 +1675,7 @@ content {
         border-radius: 100%;
         img {
             object-fit: cover;
-            right: -6px;
+            left: -6px;
             top: 49.9% !important;
             width: 106%;
             height: 106%;
@@ -1738,7 +1734,7 @@ content {
             &::before {
                 content: '';
                 position: absolute;
-                right: 0;
+                left: 0;
                 top: 50%;
                 width: 100%;
                 height: 2px;
@@ -1863,7 +1859,7 @@ content {
 
             .control {
                 position: absolute;
-                left: 20px;
+                right: 20px;
                 top: 20px;
 
                 i {
@@ -1888,8 +1884,8 @@ content {
                         position: absolute;
                         cursor: pointer;
                         top: 0;
-                        right: 0;
                         left: 0;
+                        right: 0;
                         bottom: 0;
                         background-color: #ccc;
                         transition: .4s;
@@ -1901,7 +1897,7 @@ content {
                             content: "";
                             height: 20px;
                             width: 20px;
-                            right: 4px;
+                            left: 4px;
                             bottom: 4px;
                             background-color: white;
                             transition: .4s;
@@ -1961,7 +1957,7 @@ content {
             border: 1px solid $secondColor;
 
             i {
-                margin-right: 5px;
+                margin-left: 5px;
             }
 
             &.active,
@@ -2001,11 +1997,11 @@ content {
 
         .date {
             position: absolute;
-            right: 0;
+            left: 0;
             top: 0;
             background-color: $mainColor;
             color: $secondColor;
-            border-radius: 0px 10px 0px 10px ;
+            border-radius: 10px 0px 10px 0px;
             padding: 10px 20px;
         }
 
@@ -2566,7 +2562,7 @@ content {
         background-color: $mainColor;
         color: $white-color;
         border-radius: 100%;
-        margin-left: 30px;
+        margin-right: 30px;
         transition: $transition;
         font-size: 20px;
         border: none;
@@ -2577,7 +2573,7 @@ content {
         }
 
         .fa-angle-right:before {
-            content: "\f105";
+            content: "\f104";
         }
     }
 
@@ -2615,7 +2611,7 @@ content {
                 font-size: 20px;
                 font-weight: bold;
                 position: absolute;
-                left: -3px;
+                right: -3px;
                 top: 50%;
                 transform: translateY(-50%);
             }
@@ -2631,7 +2627,7 @@ content {
         padding: 10px 10px;
 
         .Back {
-            margin-left: 20px;
+            margin-right: 20px;
         }
 
         ul {
@@ -2658,7 +2654,7 @@ content {
         height: 100px;
         border-radius: 50%;
         border: 3px solid $secondColor;
-        margin-left: 20px;
+        margin-right: 20px;
 
         img {
             width: 100%;
@@ -2701,7 +2697,7 @@ content {
 
 .timeLine {
     padding: 10px;
-    padding-right: 20px;
+    padding-left: 20px;
     position: relative;
 
     &::before {
@@ -2711,7 +2707,7 @@ content {
         border-radius: 10px;
         background-color: $secondColor;
         position: absolute;
-        right: 0;
+        left: 0;
         top: 40px;
     }
 
@@ -2735,7 +2731,7 @@ content {
             border-radius: 2px;
             background-color: $secondColor;
             position: absolute;
-            right: -20.2px;
+            left: -20.2px;
             top: 20px;
         }
 
@@ -2745,11 +2741,11 @@ content {
             height: 0;
             border-top: 10px solid transparent;
             border-bottom: 10px solid transparent;
-            border-left: 10px solid $white-color;
+            border-right: 10px solid $white-color;
             border-radius: 2px;
             background-color: $secondColor;
             position: absolute;
-            right: 0px;
+            left: 0px;
             top: 20px;
         }
     }
@@ -2866,7 +2862,7 @@ content {
     .info {
         color: #b9b9b9;
         margin-bottom: 20px;
-        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .head {
@@ -2880,7 +2876,7 @@ content {
         &::after {
             content: '';
             position: absolute;
-            right: 0;
+            left: 0;
             bottom: 0;
             width: 50%;
             height: 2px;
@@ -2893,7 +2889,7 @@ content {
         &::before {
             content: '';
             position: absolute;
-            right: 0;
+            left: 0;
             bottom: -4px;
             width: 10px;
             height: 10px;
@@ -2985,7 +2981,7 @@ content {
     position: fixed;
     width: 100%;
     min-height: 100vh;
-    right: 0;
+    left: 0;
     top: 0;
     z-index: 99999;
 
@@ -3000,7 +2996,7 @@ content {
             position: absolute;
             content: "";
             top: 0;
-            right: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             border-radius: 50%;
@@ -3080,7 +3076,7 @@ content {
         width: 100%;
         height: 100%;
         top: 0;
-        right: 0;
+        left: 0;
         background-color: $secondColor;
         z-index: -1;
         animation: border-transform-default-two 10s linear infinite alternate forwards;
